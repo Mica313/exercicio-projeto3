@@ -1,26 +1,81 @@
-body{
+*{
     font-family: 'Alata', sans-serif;
 }
 .navbar{
     background-color:rgba(0, 0, 0, 0.945);
 }
-#head h1{
+#head h1, #faq h2{
     color:rgb(0, 255, 179);
 }
-.nav-link{
+.nav-link, .nav .nav-link{
     color:rgb(0, 255, 179);
 }
-.btn-color, #search .btn:hover{
+.btn-color, .search .btn:hover{
     background-color:rgb(214, 42, 214);
     color:#fff;
 }
 .nav-link:hover{
     color: rgb(214, 42, 214);
 }
-#head .nav .nav-link.active{
+#head .nav .nav-link.active, .btn, .btn:hover{
     background-color:rgb(0, 255, 179);
     color:rgb(214, 42, 214);
 }
 .navbar-toggler{
     background-color:#fff;
+}
+.carousel-item img{
+    width:100%;
+    max-height:600px;
+}
+#sobre, #faq{
+    background-color:rgba(0, 0, 0, 0.76);
+}
+#produtos{
+    background-color:rgba(255, 255, 255, 0.726);
+}
+.text-color{
+    color:#fff;
+}
+#sobre h2.text-color, .card-title{
+    color:rgb(0, 255, 179);
+}
+.nav-shop .nav-link.active{
+    background-color:rgb(214, 42, 214);
+    color:#fff;
+}
+.nav-shop .nav-link{
+    background-color:rgb(0, 0, 0);
+}
+.nav-shop .navlink:hover{
+    color:rgb(214, 42, 214);
+}
+.social-links li{
+    list-style: none;
+    display:inline;
+}
+.social-links a{
+    text-decoration:none;
+    color:rgb(214, 42, 214);
+}
+.p-color{
+    color:rgb(214, 42, 214);
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .carousel-item img{
+        max-height:400px;
+    }
+}
+@media screen and (max-width:767px){
+    .search input, .search button{
+        font-size:8px;
+    }
+    .carousel-item img{
+        max-height:200px;
+    }
+}
+@media screen and (min-width:1024px){
+    .search{
+        margin-left:260px;
+    }
 }
